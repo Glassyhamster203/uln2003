@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"uln2003\startup_stm32f103x6.o"
+"uln2003\main.o"
+"uln2003\gpio.o"
+"uln2003\tim.o"
+"uln2003\stm32f1xx_it.o"
+"uln2003\stm32f1xx_hal_msp.o"
+"uln2003\stm32f1xx_hal_gpio_ex.o"
+"uln2003\stm32f1xx_hal_tim.o"
+"uln2003\stm32f1xx_hal_tim_ex.o"
+"uln2003\stm32f1xx_hal.o"
+"uln2003\stm32f1xx_hal_rcc.o"
+"uln2003\stm32f1xx_hal_rcc_ex.o"
+"uln2003\stm32f1xx_hal_gpio.o"
+"uln2003\stm32f1xx_hal_dma.o"
+"uln2003\stm32f1xx_hal_cortex.o"
+"uln2003\stm32f1xx_hal_pwr.o"
+"uln2003\stm32f1xx_hal_flash.o"
+"uln2003\stm32f1xx_hal_flash_ex.o"
+"uln2003\stm32f1xx_hal_exti.o"
+"uln2003\system_stm32f1xx.o"
+--strict --scatter "uln2003\uln2003.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uln2003.map" -o uln2003\uln2003.axf
